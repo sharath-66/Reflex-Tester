@@ -1,0 +1,61 @@
+<!--<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.goodDeeds.reflexTester" version="1.0.0" xmlns="http://www.w3.org/ns/widgets"
+ xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Reflex Tester</name>
+    <description>
+        An Android App which tests Your reflex times and how fast you react.
+    </description>
+    <author email="good.deed666@.com" href="http://phonegap.com">
+        SK from Good Deeds
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="icon3.png" />
+</widget>-->
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="admob.phonegap.app" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" 
+xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <!--Change name of the app when using with other apps-->
+    <name>Reflex Tester</name>
+    
+    <!--Need To change even the description of app-->
+    <description>
+        An Android App which tests Your reflex times and how fast you react.
+    </description>
+
+
+    <!--Also change about author-->
+    <author email="sharath123.sk@.com" href="">
+        SK from Good Deeds
+    </author>
+
+
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <platform name="android">
+        <preference name="android-minSdkVersion" value="16" />
+        <allow-intent href="market:*" />
+    </platform>
+    
+    <preference name="DisallowOverscroll" value="true" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
+    <plugin name="cordova-plugin-console" spec="~1.0.1" />
+    <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+
+   
+    <preference name="orientation" value="portrait" />
+    <preference name="android-build-tool" value="gradle" /> 
+    
+    <plugin name="cordova-plugin-admobpro" source="npm" >
+        <!--Just need to change value I think-->
+        <variable name="ADMOB_APP_ID" value="ca-app-pub-5039568744793885~8030979553" />
+    </plugin>
+    
+          
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="phonegap-version" value="cli-8.0.0" />
+
+    <icon src="icon.png" />
+</widget>
